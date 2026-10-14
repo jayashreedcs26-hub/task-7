@@ -1,0 +1,116 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
+}
+body { 
+    background-color: #e9ebef; 
+    transition: background 0.3s; 
+    padding: 20px; 
+}
+.container { 
+    max-width: 700px; 
+    margin: auto; 
+    background: white; 
+    padding: 20px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+}
+header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+.logo h1 { 
+    font-size: 22px; 
+    color: #1a3a5f; 
+}
+.logo p { 
+    font-size: 14px; 
+    color: #555; 
+}
+.logo span { 
+    font-size: 11px; 
+    color: #888; 
+}
+#colorBtn, #addBtn { 
+    background: #3a86ff; 
+    color: white; 
+    border: none; 
+    padding: 10px 16px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+}
+#colorBtn:hover, #addBtn:hover { 
+    opacity: 0.9; 
+}
+
+.input-section { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+#missionInput { 
+    flex: 1; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+}
+
+.counter-section { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+.card { 
+    flex: 1; 
+    padding: 12px; 
+    border-radius: 8px; 
+    text-align: center; 
+}
+.card span { 
+    display: block; 
+    font-size: 11px; 
+    color: #555; 
+}
+.card strong { 
+    font-size: 18px; 
+}
+.total { 
+    background: #e8efff; 
+}
+.completed { 
+    background: #e6f9ed; 
+}
+.pending { 
+    background: #fff3e6; 
+}
+
+#missionList { 
+    list-style: none; 
+}
+#missionList li { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: #fafafa; 
+    padding: 10px; 
+    border-radius: 8px; 
+    margin-bottom: 8px; 
+    cursor: pointer; 
+}
+#missionList li.completed { 
+    color: green; 
+    text-decoration: line-through; 
+    background: #e6f9ed; 
+}
+.delete-btn { 
+    background: #ffe0e0; 
+    color: #c00; 
+    border: none; 
+    padding: 5px 10px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+}
